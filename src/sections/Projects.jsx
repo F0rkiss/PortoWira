@@ -4,42 +4,42 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
+      title: "High-Rise Commercial Building",
+      description: "Structural design and analysis of a 25-story commercial building with reinforced concrete frame system. Included seismic analysis and foundation design.",
+      image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&h=400&fit=crop",
+      technologies: ["ETABS", "AutoCAD", "Revit", "SAP2000"],
+      liveUrl: "#",
+      githubUrl: "#",
       featured: true
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-      technologies: ["React", "Socket.io", "Express", "PostgreSQL"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
+      title: "Highway Bridge Construction",
+      description: "Project management and structural supervision of a 500-meter prestressed concrete bridge. Managed a team of 50+ workers and coordinated with multiple contractors.",
+      image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=600&h=400&fit=crop",
+      technologies: ["Primavera P6", "AutoCAD", "MS Project", "SAP2000"],
+      liveUrl: "#",
+      githubUrl: "#",
       featured: false
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
-      technologies: ["Vue.js", "Weather API", "Chart.js"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
+      title: "Residential Complex",
+      description: "Complete structural design for a 150-unit residential complex including foundation, framing, and utility systems. Achieved LEED certification.",
+      image: "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=600&h=400&fit=crop",
+      technologies: ["Revit Structure", "STAAD Pro", "AutoCAD", "BIM 360"],
+      liveUrl: "#",
+      githubUrl: "#",
       featured: false
     },
     {
       id: 4,
-      title: "Social Media Dashboard",
-      description: "A comprehensive social media analytics dashboard with real-time data visualization and performance tracking.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-      technologies: ["React", "D3.js", "Firebase", "Chart.js"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
+      title: "Water Treatment Facility",
+      description: "Designed and supervised construction of a municipal water treatment plant serving 100,000+ residents. Included hydraulic analysis and environmental compliance.",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop",
+      technologies: ["Civil 3D", "HEC-RAS", "AutoCAD", "GIS"],
+      liveUrl: "#",
+      githubUrl: "#",
       featured: true
     }
   ]
@@ -77,7 +77,7 @@ const Projects = () => {
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
-                      Live Demo
+                      View Details
                     </a>
                     <a 
                       href={project.githubUrl} 
@@ -85,7 +85,7 @@ const Projects = () => {
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
-                      GitHub
+                      Case Study
                     </a>
                   </div>
                 </div>
@@ -108,12 +108,10 @@ const Projects = () => {
 
         <div className="text-center">
           <a 
-            href="https://github.com/yourusername" 
-            className="btn btn-outline" 
-            target="_blank" 
-            rel="noopener noreferrer"
+            href="#contact" 
+            className="btn btn-outline"
           >
-            View All Projects on GitHub
+            View All Projects
           </a>
         </div>
       </div>

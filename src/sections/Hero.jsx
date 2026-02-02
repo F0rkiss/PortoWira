@@ -17,12 +17,12 @@ const Hero = () => {
               Hi, I'm <span className="bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent">Your Name</span>
             </h1>
             <p className="text-xl md:text-2xl text-primary-500 font-semibold mb-6 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-              Full Stack Developer & UI/UX Designer
+              Civil Engineer & Structural Designer
             </p>
             <p className="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-              I create exceptional digital experiences that are fast, accessible, 
-              visually appealing, and responsive. Currently focused on building 
-              products at <span className="text-primary-500 font-semibold">Your Company</span>.
+              I design and build infrastructure that stands the test of time. 
+              Specializing in structural analysis, project management, and sustainable construction. 
+              Currently working at <span className="text-primary-500 font-semibold">Your Company</span>.
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
               <a href="#projects" className="btn">
@@ -38,7 +38,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden bg-gradient-to-br from-primary-500 to-secondary-500 p-1.5 animate-float">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=400&fit=crop" 
                   alt="Your Name" 
                   className="w-full h-full object-cover rounded-full bg-gray-100"
                 />

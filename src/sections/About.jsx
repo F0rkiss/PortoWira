@@ -8,15 +8,15 @@ const About = () => {
           <div>
             <h2 className="section-title text-left mb-8">About Me</h2>
             <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-              I'm a passionate full-stack developer with 3+ years of experience 
-              creating digital solutions that make a difference. I enjoy turning 
-              complex problems into simple, beautiful, and intuitive designs.
+              I'm a passionate civil engineer with 3+ years of experience 
+              designing and managing construction projects. I enjoy turning 
+              complex engineering challenges into efficient, safe, and sustainable structures.
             </p>
             <p className="text-gray-600 mb-10 text-lg leading-relaxed">
-              My journey in web development started with curiosity about how 
-              websites work, and it has evolved into a career where I continuously 
-              push myself to learn and grow. I'm always excited to work on projects 
-              that challenge me to think outside the box.
+              My journey in civil engineering started with a fascination for how 
+              buildings and bridges are constructed. It has evolved into a career where I 
+              continuously push myself to innovate and implement cutting-edge solutions 
+              in structural design, construction management, and infrastructure development.
             </p>
             
             <div className="grid grid-cols-3 gap-6">
@@ -39,7 +39,7 @@ const About = () => {
             <div className="relative">
               <div className="transform rotate-3 hover:rotate-0 transition-transform duration-300 rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face" 
+                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=500&fit=crop" 
                   alt="About me" 
                   className="w-full h-auto block"
                 />

@@ -11,8 +11,8 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-white">Portfolio</h3>
             <p className="text-gray-400 leading-relaxed">
-              Passionate developer creating amazing digital experiences. 
-              Let's build something great together!
+              Passionate civil engineer designing sustainable infrastructure. 
+              Let's build something that lasts!
             </p>
           </div>
           

@@ -4,39 +4,39 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      company: "TechCorp",
-      position: "Senior Frontend Developer",
+      company: "ABC Construction Group",
+      position: "Senior Structural Engineer",
       duration: "2022 - Present",
       description: [
-        "Lead development of React-based web applications serving 100k+ users",
-        "Mentored junior developers and established coding best practices",
-        "Improved application performance by 40% through optimization techniques"
+        "Lead structural design for commercial and residential projects worth $50M+",
+        "Mentored junior engineers and established design standards and QC procedures",
+        "Reduced project costs by 15% through innovative design optimization"
       ],
-      technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+      technologies: ["ETABS", "SAP2000", "Revit", "AutoCAD"]
     },
     {
       id: 2,
-      company: "StartupXYZ",
-      position: "Full Stack Developer",
+      company: "Metro Infrastructure Ltd.",
+      position: "Project Engineer",
       duration: "2021 - 2022",
       description: [
-        "Built and maintained full-stack web applications using MERN stack",
-        "Developed RESTful APIs and integrated third-party services",
-        "Collaborated with design team to implement pixel-perfect UI components"
+        "Managed construction of highway and bridge projects with budgets up to $20M",
+        "Coordinated with contractors, consultants, and government agencies",
+        "Ensured compliance with safety standards and building codes"
       ],
-      technologies: ["React", "Node.js", "MongoDB", "Express.js"]
+      technologies: ["Primavera P6", "MS Project", "Civil 3D", "AutoCAD"]
     },
     {
       id: 3,
-      company: "Digital Agency",
-      position: "Frontend Developer",
+      company: "BuildRight Consultants",
+      position: "Junior Civil Engineer",
       duration: "2020 - 2021",
       description: [
-        "Created responsive websites for various clients across different industries",
-        "Worked closely with designers to translate mockups into functional websites",
-        "Optimized websites for performance and SEO"
+        "Performed structural analysis and design for residential buildings",
+        "Conducted site inspections and prepared technical reports",
+        "Assisted in quantity surveying and cost estimation"
       ],
-      technologies: ["HTML", "CSS", "JavaScript", "WordPress"]
+      technologies: ["AutoCAD", "STAAD Pro", "Excel", "SketchUp"]
     }
   ]
 

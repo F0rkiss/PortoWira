@@ -3,33 +3,33 @@ import React from 'react'
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Structural Design",
       skills: [
-        { name: "React", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "TypeScript", level: 80 },
-        { name: "CSS/SASS", level: 90 },
-        { name: "HTML5", level: 95 },
+        { name: "AutoCAD", level: 95 },
+        { name: "SAP2000", level: 90 },
+        { name: "ETABS", level: 85 },
+        { name: "Revit Structure", level: 85 },
+        { name: "STAAD Pro", level: 80 },
       ]
     },
     {
-      title: "Backend",
+      title: "Project Management",
       skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Python", level: 80 },
-        { name: "MongoDB", level: 75 },
-        { name: "PostgreSQL", level: 70 },
-        { name: "REST APIs", level: 90 },
+        { name: "MS Project", level: 90 },
+        { name: "Primavera P6", level: 85 },
+        { name: "Cost Estimation", level: 85 },
+        { name: "Contract Admin", level: 80 },
+        { name: "Quality Control", level: 90 },
       ]
     },
     {
-      title: "Tools & Others",
+      title: "Technical Skills",
       skills: [
-        { name: "Git", level: 90 },
-        { name: "Docker", level: 70 },
-        { name: "AWS", level: 65 },
-        { name: "Figma", level: 80 },
-        { name: "Webpack", level: 75 },
+        { name: "Concrete Design", level: 90 },
+        { name: "Steel Structures", level: 85 },
+        { name: "Geotechnical", level: 75 },
+        { name: "Surveying", level: 80 },
+        { name: "BIM Modeling", level: 85 },
       ]
     }
   ]
@@ -37,9 +37,9 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 md:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-8">
-        <h2 className="section-title">Skills & Technologies</h2>
+        <h2 className="section-title">Skills & Expertise</h2>
         <p className="section-subtitle">
-          Technologies I work with to bring ideas to life
+          Engineering skills and tools I use to deliver quality projects
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
