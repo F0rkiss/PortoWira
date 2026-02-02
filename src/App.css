@@ -1,0 +1,8 @@
+/* Additional custom styles if needed */
+.dark .section-title {
+  @apply text-gray-100;
+}
+
+.dark .section-subtitle {
+  @apply text-gray-300;
+}
