@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Projects = () => {
+  const [activeProject, setActiveProject] = useState(null)
+  
   const projects = [
     {
       id: 1,
@@ -45,17 +47,17 @@ const Projects = () => {
   ]
 
   return (
-    <section id="projects" className="py-20 md:py-24 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-8">
+    <section id="projects" className="py-16 sm:py-20 md:py-24 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="section-title">Featured Projects</h2>
         <p className="section-subtitle">
           A selection of projects I've worked on recently
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 mb-12 sm:mb-16">
           {projects.map((project) => (
-            <div key={project.id} className={`bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 relative ${
-              project.featured ? 'md:col-span-2 lg:col-span-1' : ''
+            <div key={project.id} className={`bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 active:scale-[0.98] relative ${
+              project.featured ? 'sm:col-span-2 lg:col-span-1' : ''
             }`}>
               {project.featured && (
                 <div className="absolute top-4 right-4 bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-3 py-1 rounded-full text-xs font-semibold z-10">
@@ -63,27 +65,30 @@ const Projects = () => {
                 </div>
               )}
               
-              <div className="relative h-64 overflow-hidden group">
+              <div 
+                className="relative h-48 sm:h-56 lg:h-64 overflow-hidden group cursor-pointer"
+                onClick={() => setActiveProject(activeProject === project.id ? null : project.id)}
+              >
                 <img 
                   src={project.image} 
                   alt={project.title} 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-primary-500/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="flex gap-4">
+                <div className={`absolute inset-0 bg-primary-500/90 transition-opacity duration-300 flex items-center justify-center ${
+                  activeProject === project.id ? 'opacity-0' : 'opacity-0 group-hover:opacity-100'
+                }`}>
+                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 p-4">
                     <a 
                       href={project.liveUrl} 
-                      className="btn btn-small bg-white text-primary-500 hover:bg-gray-100" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
+                      className="btn btn-outline btn-small border-white text-white hover:bg-white" 
+                      onClick={(e) => e.stopPropagation()}
                     >
                       View Details
                     </a>
                     <a 
                       href={project.githubUrl} 
-                      className="btn btn-outline btn-small border-white text-white hover:bg-white hover:text-primary-500" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
+                      className="btn btn-outline btn-small border-white text-white hover:bg-white " 
+                      onClick={(e) => e.stopPropagation()}
                     >
                       Case Study
                     </a>
@@ -91,12 +96,12 @@ const Projects = () => {
                 </div>
               </div>
               
-              <div className="p-8">
-                <h3 className="text-gray-800 text-xl font-semibold mb-4">{project.title}</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">{project.description}</p>
+              <div className="p-5 sm:p-6 lg:p-8">
+                <h3 className="text-gray-800 dark:text-white text-lg sm:text-xl font-semibold mb-3 sm:mb-4">{project.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4 sm:mb-6 text-sm sm:text-base">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
-                    <span key={tech} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
+                    <span key={tech} className="bg-gray-100 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-3 py-1 rounded-full text-sm font-medium">
                       {tech}
                     </span>
                   ))}

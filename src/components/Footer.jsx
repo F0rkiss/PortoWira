@@ -4,9 +4,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
   
   return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="max-w-6xl mx-auto px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+    <footer className="bg-gray-900 dark:bg-gray-950 text-white py-12 transition-colors duration-300">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
           {/* About Section */}
           <div>
             <h3 className="text-xl font-semibold mb-4 text-white">Portfolio</h3>
@@ -37,9 +37,9 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-white">Get In Touch</h3>
             <div className="space-y-2 text-gray-400">
-              <p>📧 hello@yourname.com</p>
-              <p>📱 +1 (555) 123-4567</p>
-              <p>📍 San Francisco, CA</p>
+              <p>📧 wirahadi@gmail.com</p>
+              <p>📱 +62 123-456-789</p>
+              <p>📍 Jakarta, CA</p>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ const Footer = () => {
           
           <div className="flex space-x-6">
             {[
-              { name: 'GitHub', url: 'https://github.com/yourusername' },
+              { name: 'Instagram', url: 'https://instagram.com/yourusername' },
               { name: 'LinkedIn', url: 'https://linkedin.com/in/yourname' },
               { name: 'Twitter', url: 'https://twitter.com/yourusername' }
             ].map((social) => (
